@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Eastern Foxes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script>
+        let team_text = "TEAM";
+        let robots_text = "ROBOTS";
+        let achievements_text = "ACHIEVEMENTS";
+        let contact_text = "MEDIA";
+        let team_icon = '<span class="material-symbols-outlined">group</span>';
+        let robots_icon = '<span class="material-symbols-outlined">build</span>';
+        let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
+        let contact_icon = '<span class="material-symbols-outlined">contact_mail</span>';
+
+        // wait until the page is loaded
+        $(document).ready(function() {
+            if ($(window).width() < 1400) {
+                $("#team").html(team_icon);
+                $("#robots").html(robots_icon);
+                $("#achievements").html(achievements_icon);
+                $("#contact").html(contact_icon);
+            } else {
+                $("#team").html(team_text);
+                $("#robots").html(robots_text);
+                $("#achievements").html(achievements_text);
+                $("#contact").html(contact_text);
+            }
+        });
+
+        $(document).ready(function() {
+            $(".logo").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="root">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </div>
+        <div class="navbar">
+            <a class="navbar-button" href="team.html" id="team">TEAM</a>
+            <a class="navbar-button" href="robots.html" id="robots">ROBOTS</a>
+
+            <a class="navbar-button" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
+            <a class="navbar-button selected" href="contact.html" id="contact">MEDIA</a>
+        </div>
+        <div class="container">
+            <!-- facebook, instagram, youtube, mail -->
+            <ul class="contact">
+                <li id="facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png" alt="Facebook Logo" width="130" height="auto">
+                    <p>Eastern Foxes</p>
+                </li>
+                <li id="instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram Logo" width="130" height="auto">
+                    <p>@eastern_foxes</p>
+                </li>
+                <li id="youtube">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2048px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube Logo" width="130" height="auto">
+                    <p>Eastern Foxes | RO181</p>
+                </li>
+                <li id="mail">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/800px-Circle-icons-mail.svg.png" alt="Mail Logo" width="130" height="auto">
+                    <p>eas1ernf0xes@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            // on click il open the link in a new tabs
+            $("#facebook").click(function() {
+                window.open("https://www.facebook.com/EasternFoxes");
+            });
+            $("#instagram").click(function() {
+                window.open("https://www.instagram.com/eastern_foxes/");
+            });
+            $("#youtube").click(function() {
+                window.open("https://www.youtube.com/@easternfoxesro1814");
+            });
+            $("#mail").click(function() {
+                window.open("mailto:eas1ernf0xes@gmail.com")
+            });
+        </script>
+        <script>
+            $(window).resize(function() {
+              if ($(window).width() < 1400) {
+                $("#team").html(team_icon);
+                $("#robots").html(robots_icon);
+                $("#achievements").html(achievements_icon);
+                $("#contact").html(contact_icon);
+              } else {
+                $("#team").html(team_text);
+                $("#robots").html(robots_text);
+                $("#achievements").html(achievements_text);
+                $("#contact").html(contact_text);
+              }
+      
+            });
+          </script>
+    </div>
+</body>
+</html>

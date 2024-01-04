@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Eastern Foxes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script>
+      // wait until the page is loaded
+      $(document).ready(function() {
+          if ($(window).width() < 1400) {
+              $("#team").html(team_icon);
+              $("#robots").html(robots_icon);
+              $("#achievements").html(achievements_icon);
+              $("#contact").html(contact_icon);
+          } else {
+              $("#team").html(team_text);
+              $("#robots").html(robots_text);
+              $("#achievements").html(achievements_text);
+              $("#contact").html(contact_text);
+          }
+      });
+
+      $(document).ready(function() {
+            $(".logo").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+  </script>
+</head>
+<body>
+    <div id="root">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </div>
+        <div class="navbar">
+          <a class="navbar-button selected" href="team.html" id="team">TEAM</a>
+          <a class="navbar-button" href="robots.html" id="robots">ROBOTS</a>
+
+          <a class="navbar-button" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
+          <a class="navbar-button" href="contact.html" id="contact">MEDIA</a>
+      </div>
+        <div class = "about-parent">
+            <div class="about-text-container">
+              <br>
+              <h1>THE TEAM ᕙ(`▽´)ᕗ</h1>
+              <br>
+              <ul>
+                <li class="pr-color">
+                  <img src="assets/images/members/3.png" />
+                  <h2>Mara</h2>
+                  <h3>PR_Leader</h3>
+                  <p>Story Designs |</p>
+                  <p>Slytherin |</p>
+                </li>
+                <li class="pr-color">
+                  <img src="assets/images/members/2.png" />
+                  <h2>Alexandra</h2>
+                  <h3>PR :/ Team_Leader</h3>
+                  <p>Social Media |</p>
+                  <p>Hufflepuff |</p>
+                </li>
+                <li class="pr-color">
+                  <img src="assets/images/members/1.png" />
+                  <h2>Răzvan</h2>
+                  <h3>PR</h3>
+                  <p>Graphic Design |</p>
+                  <p>Slytherin |</p>
+                </li>
+                
+                <li class="pr-color">
+                  <img src="assets/images/members/15.png" />
+                  <h2>Daria</h2>
+                  <h3>PR</h3>
+                  <p>Public Speaking |</p>
+                  <p>Ravenclaw |</p>
+                </li>
+                <li class="pr-color">
+                  <img src="assets/images/members/5.png" />
+                  <h2>Tiberiu</h2>
+                  <h3>PR</h3>
+                  <p>Multitasking |</p>
+                  <p>Ravenclaw |</p>
+                </li>
+                <li class="pr-color">
+                  <img src="assets/images/members/17.png" />
+                  <h2>Denis</h2>
+                  <h3>PR</h3>
+                  <p>Events |</p>
+                  <p>Slytherin |</p>  
+                </li>
+                <li class="pr-color">
+                  <img src="assets/images/members/11.png" />
+                  <h2>Stefan</h2>
+                  <h3>PR</h3>
+                  <p>Photography |</p>
+                  <p>Gryffindor |</p>
+                </li> 
+                <li class="pr-color">
+                  <img src="assets/images/members/4.png" />
+                  <h2>Victor</h2>
+                  <h3>PR</h3>
+                  <p>Graphic Design |</p>
+                  <p>Hufflepuff |</p>
+                </li>
+                <li class="constru-color">
+                  <img src="assets/images/members/16.png" />
+                  <h2>Mathias</h2>
+                  <h3>Construction_Leader</h3>
+                  <p>3D Design |</p>
+                  <p>Gryffindor |</p>
+                </li>
+                <li class="constru-color">
+                  <img src="assets/images/members/9.png" />
+                  <h2>Codrut</h2>
+                  <h3>Construction</h3>
+                  <p>Cable Management |</p>
+                  <p>Ravenclaw |</p>
+                </li>
+                <li class="constru-color">
+                  <img src="assets/images/members/10.png" />
+                  <h2>Robert</h2>
+                  <h3>Construction</h3>
+                  <p>Wires |</p>
+                  <p>Slytherin |</p>
+                </li>
+                <li class="constru-color">
+                  <img src="assets/images/members/18.png" />
+                  <h2>Dragos</h2>
+                  <h3>Construction</h3>
+                  <p>3D Design |</p>
+                  <p>Hufflepuff |</p>
+                <li class="programming-color">
+                  <img src="assets/images/members/13.png" />
+                  <h2>Mihnea</h2>
+                  <h3>Programming_Leader</h3>
+                  <p>Coding |</p>
+                  <p>Slytherin |</p>
+                </li>
+                <li class="programming-color">
+                  <img src="assets/images/members/14.png" />
+                  <h2>Răzvan</h2>
+                  <h3>Programming</h3>
+                  <p>Java |</p>
+                  <p>Ravenclaw |</p>
+                </li>
+              </ul>
+              <br><br>
+              <h1>THE MENTORS ╰(⊡-⊡)و</h1>
+              <br>
+              <ul>
+                <li class="gold">
+                  <img src="assets/images/mentors/1.png" />
+                  <h2>Daniela Lica</h2>
+                  <h3>Mentor</h3>
+                  <p>The Inspector |</p>
+                  <p>Know-all |</p>
+                </li>
+                <li class="gold">
+                  <img src="assets/images/mentors/2.png" />
+                  <h2>Iulia Suditu</h2>
+                  <h3>Mentor</h3>
+                  <p>Mrs. Sheriff |</p>
+                  <p>Tele-centre |</p>
+                </li>
+                <li class="gold">
+                  <img src="assets/images/mentors/3.png" />
+                  <h2>Stefan Taga</h2>
+                  <h3>Mentor</h3>
+                  <p>The Advisor |</p>
+                  <p>Motivator |</p>
+                </li>
+              </ul>
+              <br><br>
+              <h1>THE ALUMNI ( ⌐▨_▨)</h1>
+              <br>
+              <ul>
+                <li class="mentor-color">
+                  <img src="assets/images/members/12.png" />
+                  <h2>Ionut</h2>
+                  <h3>Programming_Alumni</h3>
+                  <p>Software Engineering |</p>
+                  <p>Hufflepuff |</p>
+                </li>
+                <li class="mentor-color">
+                  <img src="assets/images/members/8.png" />
+                  <h2>Alexandru</h2>
+                  <h3>PR_Alumni</h3>
+                  <p>Engineering |</p>
+                  <p>Hufflepuff |</p>
+                </li>
+                <li class="mentor-color">
+                  <img src="assets/images/members/7.png" />
+                  <h2>Sabin</h2>
+                  <h3>Construction_Alumni</h3>
+                  <p>Thinker |</p>
+                  <p>Slytherin |</p>
+                </li>
+                <li class="mentor-color">
+                  <img src="assets/images/members/6.png" />
+                  <h2>Eduard</h2>
+                  <h3>Construction_Alumni</h3>
+                  <p>Problem Solver |</p>
+                  <p>Gryffindor |</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+
+    <script>
+      let team_text = "TEAM";
+      let robots_text = "ROBOTS";
+      let achievements_text = "ACHIEVEMENTS";
+      let contact_text = "MEDIA";
+      let team_icon = '<span class="material-symbols-outlined">group</span>';
+      let robots_icon = '<span class="material-symbols-outlined">build</span>';
+      let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
+      let contact_icon = '<span class="material-symbols-outlined">contact_mail</span>';
+
+      $(window).resize(function() {
+        if ($(window).width() < 1400) {
+          $("#team").html(team_icon);
+          $("#robots").html(robots_icon);
+          $("#achievements").html(achievements_icon);
+          $("#contact").html(contact_icon);
+        } else {
+          $("#team").html(team_text);
+          $("#robots").html(robots_text);
+          $("#achievements").html(achievements_text);
+          $("#contact").html(contact_text);
+        }
+
+        // also do this on load
+        if ($(window).width() < 1400) {
+          $("#team").html(team_icon);
+          $("#robots").html(robots_icon);
+          $("#achievements").html(achievements_icon);
+          $("#contact").html(contact_icon);
+        } else {
+          $("#team").html(team_text);
+          $("#robots").html(robots_text);
+          $("#achievements").html(achievements_text);
+          $("#contact").html(contact_text);
+        }
+      });
+    </script>
+</body>
+</html>

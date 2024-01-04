@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Eastern Foxes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script>
+        let team_text = "TEAM";
+        let robots_text = "ROBOTS";
+        let achievements_text = "ACHIEVEMENTS";
+        let contact_text = "MEDIA";
+        let team_icon = '<span class="material-symbols-outlined">group</span>';
+        let robots_icon = '<span class="material-symbols-outlined">build</span>';
+        let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
+        let contact_icon = '<span class="material-symbols-outlined">contact_mail</span>';
+
+        // wait until the page is loaded
+        $(document).ready(function() {
+            if ($(window).width() < 1400) {
+                $("#team").html(team_icon);
+                $("#robots").html(robots_icon);
+                $("#achievements").html(achievements_icon);
+                $("#contact").html(contact_icon);
+            } else {
+                $("#team").html(team_text);
+                $("#robots").html(robots_text);
+                $("#achievements").html(achievements_text);
+                $("#contact").html(contact_text);
+            }
+        });
+
+        $(document).ready(function() {
+            $(".logo").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="root">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </div>
+        <div class="navbar">
+            <a class="navbar-button" href="team.html" id="team">TEAM</a>
+            <a class="navbar-button" href="robots.html" id="robots">ROBOTS</a>
+
+            <a class="navbar-button selected" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
+            <a class="navbar-button" href="contact.html" id="contact">MEDIA</a>
+        </div>
+        <div class="container">
+            <div class="awards-text-container">
+              <br>
+                <br>
+                <h1 class="left">2022-2023 / POWERPLAY</h1>
+                <ul>
+                    <li style="background-color: #d34539">
+                        <h2>► REGIONALS</h2>
+                        <h2>- THINK AWARD I</h2>
+                    </li>
+                    <!-- straight line -->
+                    <li style="height: 0.1% !important; background-color: #464646; width: 100%; border-radius: 0;"></li>
+                
+                    <li style="background-color: #4b9ee2">
+                        <h2>► BRAVEBOTS X HYPERCUBE DEMO</h2>
+                        <h2>- WINNING 1ST PICK</h2>
+                    </li>
+                    <li style="background-color: #4b9ee2">
+                        <h2>► ABSOTECH DEMO</h2>
+                        <h2>- WINNING 2ND PLACE</h2>
+                    </li>
+                    <li style="background-color: #4b9ee2">
+                        <h2>► HTW DEMO</h2>
+                        <h2>- WINNING 1ST PICK</h2>
+                    </li>
+                    <li style="background-color: #4b9ee2">
+                        <h2>► LZR ROBOTICS FEST</h2>
+                        <h2>- WINNING CAPTAIN</h2>
+                    </li>
+                    <li style="background-color: #4b9ee2">
+                        <h2>► UNIREA ROBOTILOR</h2>
+                        <h2>- WINNING CAPTAIN</h2>
+                    </li>
+
+                </ul>
+                <br>
+                <h1 class="right">2021-2022 / FREIGHT FRENZY</h1>
+                <ul>
+                <li>
+                    <h2>►  INNOVATE AWARD I</h2>
+                    
+                </li>
+                <br><br><br>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        $(window).resize(function() {
+          if ($(window).width() < 1400) {
+            $("#team").html(team_icon);
+            $("#robots").html(robots_icon);
+            $("#achievements").html(achievements_icon);
+            $("#contact").html(contact_icon);
+          } else {
+            $("#team").html(team_text);
+            $("#robots").html(robots_text);
+            $("#achievements").html(achievements_text);
+            $("#contact").html(contact_text);
+          }
+  
+          // also do this on load
+          if ($(window).width() < 1400) {
+            $("#team").html(team_icon);
+            $("#robots").html(robots_icon);
+            $("#achievements").html(achievements_icon);
+            $("#contact").html(contact_icon);
+          } else {
+            $("#team").html(team_text);
+            $("#robots").html(robots_text);
+            $("#achievements").html(achievements_text);
+            $("#contact").html(contact_text);
+          }
+        });
+      </script>
+</body>
+</html>

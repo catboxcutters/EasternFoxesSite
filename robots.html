@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Eastern Foxes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script>
+        // wait until the page is loaded
+        $(document).ready(function() {
+            if ($(window).width() < 1400) {
+                $("#team").html(team_icon);
+                $("#robots").html(robots_icon);
+                $("#achievements").html(achievements_icon);
+                $("#contact").html(contact_icon);
+            } else {
+                $("#team").html(team_text);
+                $("#robots").html(robots_text);
+                $("#achievements").html(achievements_text);
+                $("#contact").html(contact_text);
+            }
+        });
+
+        $(document).ready(function() {
+            $(".logo").click(function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="root">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </div>
+        <div class="navbar">
+            <a class="navbar-button" href="team.html" id="team">TEAM</a>
+            <a class="navbar-button selected" href="robots.html" id="robots">ROBOTS</a>
+
+            <a class="navbar-button" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
+            <a class="navbar-button" href="contact.html" id="contact">MEDIA</a>
+        </div>
+        <div class="container">
+          <div class="about-text-container">
+            <br>
+            <h1>OUR ROBOTS <3</h1>
+            <h1>://PETRISOR</h1>
+            <div class="home-text-container-no-offset">
+              <ul class="home-text">
+                
+                <li>
+                  <img src="assets/images/slide1.jpg" alt="main1">
+                </li>
+
+                <li>
+                  Our PowerPlay robot, Petrisor, was built in 2022. It was a simple robot, with a simple design, but it was the first step in our journey. It was built with the help of our mentor, Petrisor, who is also the robot's namesake.
+                <br><br>It was a great robot, and it helped us win the Think I award, but we knew we could do better.
+                </li>
+
+                <li>
+                  <img src="assets/images/petrisor.jpg" alt="main2">
+                </li>
+
+                <li>
+                  Petrisor's intake also functioned as an outtake, able to grab a cone and swing it over the top of the robot to score easily on the back side of the robot.
+                  <br><br> Petrisor's unique but different design meant that the autonomy cycles involved minimal movement, as the robot picked up the cones from the stack and placed them backwards.
+                </li>
+              </ul>
+              <br><br>
+            </div>
+          </div>
+            <br>
+          </div>
+        </div>
+    </div>
+    <script>
+        let team_text = "TEAM";
+        let robots_text = "ROBOTS";
+        let achievements_text = "ACHIEVEMENTS";
+        let contact_text = "MEDIA";
+        let team_icon = '<span class="material-symbols-outlined">group</span>';
+        let robots_icon = '<span class="material-symbols-outlined">build</span>';
+        let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
+        let contact_icon = '<span class="material-symbols-outlined">contact_mail</span>';
+  
+        $(window).resize(function() {
+          if ($(window).width() < 1400) {
+            $("#team").html(team_icon);
+            $("#robots").html(robots_icon);
+            $("#achievements").html(achievements_icon);
+            $("#contact").html(contact_icon);
+          } else {
+            $("#team").html(team_text);
+            $("#robots").html(robots_text);
+            $("#achievements").html(achievements_text);
+            $("#contact").html(contact_text);
+          }
+  
+          // also do this on load
+          if ($(window).width() < 1400) {
+            $("#team").html(team_icon);
+            $("#robots").html(robots_icon);
+            $("#achievements").html(achievements_icon);
+            $("#contact").html(contact_icon);
+          } else {
+            $("#team").html(team_text);
+            $("#robots").html(robots_text);
+            $("#achievements").html(achievements_text);
+            $("#contact").html(contact_text);
+          }
+        });
+      </script>
+</body>
+</html>
