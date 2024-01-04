@@ -24,9 +24,9 @@
               $("#achievements").html(achievements_text);
               $("#contact").html(contact_text);
           }
-          $(".logo").click(function() {
-                window.location.href = "index.html";
-            });
+          // $(".logo").click(function() {
+          //       window.location.href = "index.html";
+          //   });
       });
 
 
@@ -36,7 +36,9 @@
 <body>
     <div id="root">
         <div class="logo">
+          <a class="logo" href="index.html">
             <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </a>
         </div>
         <div class="navbar">
             <a class="navbar-button" href="team.html" id="team">TEAM</a>
