@@ -21,7 +21,7 @@
 
         // wait until the page is loaded
         $(document).ready(function() {
-            if ($(window).width() < 1400) {
+            if ($(window).width() < 1500) {
                 $("#team").html(team_icon);
                 $("#robots").html(robots_icon);
                 $("#achievements").html(achievements_icon);
@@ -56,6 +56,12 @@
             <div class="awards-text-container">
               <br>
                 <br>
+                <h1 class="left">2023-2024</h1>
+                <ul>
+                    <li style="background-color: #d34539">
+                        <h2>► REGIONALS</h2>
+                        <h2>- DESIGN AWARD I</h2>
+                </ul>
                 <h1 class="left">2022-2023 / POWERPLAY</h1>
                 <ul>
                     <li style="background-color: #d34539">
@@ -103,7 +109,7 @@
     </div>
     <script>
         $(window).resize(function() {
-          if ($(window).width() < 1400) {
+          if ($(window).width() < 1500) {
             $("#team").html(team_icon);
             $("#robots").html(robots_icon);
             $("#achievements").html(achievements_icon);
@@ -116,7 +122,7 @@
           }
   
           // also do this on load
-          if ($(window).width() < 1400) {
+          if ($(window).width() < 1500) {
             $("#team").html(team_icon);
             $("#robots").html(robots_icon);
             $("#achievements").html(achievements_icon);
