@@ -830,3 +830,17 @@
     font-size: 15px;
   }
 }
+@media screen and (max-width: 600px) {
+  .home-text-container-no-offset {
+      /* Adjust the properties as needed */
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  .about-text-container {
+      /* Adjust the properties as needed */
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+}
