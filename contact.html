@@ -13,7 +13,7 @@
         let team_text = "TEAM";
         let robots_text = "ROBOTS";
         let achievements_text = "ACHIEVEMENTS";
-        let contact_text = "MEDIA";
+        let contact_text = "CONTACT";
         let team_icon = '<span class="material-symbols-outlined">group</span>';
         let robots_icon = '<span class="material-symbols-outlined">build</span>';
         let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
@@ -51,11 +51,15 @@
             <a class="navbar-button" href="robots.html" id="robots">ROBOTS</a>
 
             <a class="navbar-button" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
-            <a class="navbar-button selected" href="contact.html" id="contact">MEDIA</a>
+            <a class="navbar-button selected" href="contact.html" id="contact">CONTACT</a>
         </div>
         <div class="container">
             <!-- facebook, instagram, youtube, mail -->
             <ul class="contact">
+                <li id="sponsor">
+                    <img src="https://formular230.ro/erp/img/logo-logo.svg"
+                    <p>BECOME A SPONSOR!!</p>
+                </li>
                 <li id="facebook">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png" alt="Facebook Logo" width="130" height="auto">
                     <p>Eastern Foxes</p>
@@ -88,6 +92,9 @@
             });
             $("#mail").click(function() {
                 window.open("mailto:eas1ernf0xes@gmail.com")
+            });
+            $("#sponsor").click(function() {
+                window.open("sponsor.html");
             });
         </script>
         <script>
